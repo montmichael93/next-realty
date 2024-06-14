@@ -34,8 +34,8 @@ export function HomesSoldCard({ className, ...props }: CardProps) {
                     <Image
                       src={home.medium_image_url}
                       alt="none"
-                      width={"400"}
-                      height={"300"}
+                      width={"300"}
+                      height={"200"}
                       quality={100}
                       priority={true}
                     />
