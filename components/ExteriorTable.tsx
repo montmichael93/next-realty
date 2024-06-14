@@ -5,11 +5,11 @@ export function ExteriorData() {
   const { propertyData } = useRealty();
   return (
     <>
-      <br />
-      <br />
       <div className="grid gap-12">
         <div>
-          <h2 className="text-3xl font-bold lg:text-4xl">Exterior</h2>
+          <h2 className="text-3xl font-bold text-center lg:text-4xl">
+            Exterior
+          </h2>
         </div>
         <Table>
           <TableBody>

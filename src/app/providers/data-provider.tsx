@@ -9,16 +9,25 @@ import {
   useState,
 } from "react";
 
-import { ImageDATA } from "../../utils/types";
-import { TypePropertyDATA } from "../../utils/types";
-import { propertyImageDataFromAPI } from "@/utils/propertyImage";
+import { ImageDATA, TypeNotFound } from "../../utils/PropertyTypes";
+import { TypePropertyDATA } from "../../utils/PropertyTypes";
+import { propertyImageDataFromAPI } from "@/utils/propertyImageData";
 import { propertyDataFromAPI } from "@/utils/propertydata";
+import { dataNotFoundOnApi } from "@/utils/datanotfoundonapi";
+import { AgentDataTypes } from "@/utils/realtorTypes";
+import { agentData } from "@/utils/realtorData";
+import { SoldTypes } from "@/utils/propertiesSoldDataTypes";
+import { soldPropertiesData } from "@/utils/propertiesSoldData";
+import { TypesForReviews } from "@/utils/zillowReviewsType";
+import { agentReviewData } from "@/utils/zillowReviewsData";
 
 type TypeRealtyProvider = {
   propertyData: TypePropertyDATA | null;
   imageData: ImageDATA | null;
-  setImageData: Dispatch<SetStateAction<ImageDATA | null>>;
-  setPropertyData: Dispatch<SetStateAction<TypePropertyDATA | null>>;
+  dataNotFoundOnApi: TypeNotFound;
+  realtorAgent: AgentDataTypes | null;
+  soldProperties: SoldTypes | null;
+  zillowReviewData: TypesForReviews | null;
 };
 
 const realtyDataContext = createContext<TypeRealtyProvider>(
@@ -26,23 +35,32 @@ const realtyDataContext = createContext<TypeRealtyProvider>(
 );
 
 export const RealtyProvider = ({ children }: { children: ReactNode }) => {
+  const [imageData, setImageData] = useState<ImageDATA | null>(null);
+  const [realtorAgent, setRealtorAgent] = useState<AgentDataTypes | null>(null);
+  const [soldProperties, setSoldProperties] = useState<SoldTypes | null>(null);
+  const [zillowReviewData, setZillowReviewData] =
+    useState<TypesForReviews | null>(null);
   const [propertyData, setPropertyData] = useState<TypePropertyDATA | null>(
     null
   );
-  const [imageData, setImageData] = useState<ImageDATA | null>(null);
 
   useEffect(() => {
+    setZillowReviewData(agentReviewData);
     setImageData(propertyImageDataFromAPI);
     setPropertyData(propertyDataFromAPI);
+    setRealtorAgent(agentData);
+    setSoldProperties(soldPropertiesData);
   }, []);
 
   return (
     <realtyDataContext.Provider
       value={{
+        zillowReviewData,
+        realtorAgent,
         propertyData,
         imageData,
-        setImageData,
-        setPropertyData,
+        dataNotFoundOnApi,
+        soldProperties,
       }}
     >
       {children}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import analytics from "../../public/analytics.jpg";
+import analytics from "../public/analytics.jpg";
 import { Button } from "@/components/ui/button";
 export const Analytics = () => {
   return (
@@ -8,7 +8,9 @@ export const Analytics = () => {
         {/* Grid */}
         <div className="grid gap-12">
           <div>
-            <h2 className="text-3xl font-bold lg:text-4xl">View analytics</h2>
+            <h2 className="text-3xl text-center font-bold lg:text-4xl">
+              View analytics
+            </h2>
             <p className="mt-3 text-muted-foreground">
               Create HAR Account to obtain access to the analytics for this
               listing and view the number of times the property has been viewed,
@@ -23,12 +25,15 @@ export const Analytics = () => {
               height={"400"}
               alt="analytics-chart"
             />
-            <Button variant="outline">
-              Sign in to view the analytic report
-            </Button>
+            <a href="https://www.har.com/login?nexturl=https%3A%2F%2Fwww.har.com%2Fhomedetail%2F12822-southbridge-rd-houston-tx-77047%2F10167565%3Fcid%3Dleonoboa%23TrafficReport">
+              <Button variant="outline">
+                Sign in to view the analytic report
+              </Button>
+            </a>
           </div>
-
-          <Button variant="outline">Dont have an account? sign up!</Button>
+          <a href="https://www.har.com/login/createaccount?">
+            <Button variant="outline">Dont have an account? sign up!</Button>
+          </a>
         </div>
       </div>
     </div>

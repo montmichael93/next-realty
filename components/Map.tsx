@@ -1,4 +1,4 @@
-//import Image from "next/image";
+// @ts-nocheck
 import { useState } from "react";
 import {
   APIProvider,
@@ -7,22 +7,19 @@ import {
   Pin,
   InfoWindow,
 } from "@vis.gl/react-google-maps";
-import { useRealty } from "@/app/providers/data-provider";
 
-//import Branding from "../public/branding.jpg";
+import dotenv from "dotenv";
+dotenv.config();
 
 export default function MapApi() {
-  const { propertyData } = useRealty();
-
-  const lat = propertyData?.latitude;
-  const lng = propertyData?.longitude;
-
-  console.log(propertyData?.latitude);
-  const position = { lat: 29.760427, lng: -95.369804 };
+  const position = {
+    lat: 29.623413,
+    lng: -95.36764,
+  };
   const [open, setOpen] = useState(false);
 
   return (
-    <APIProvider apiKey="AIzaSyCOUU7AeSImVaoarAROKZ4eUQ5Bx4K-Zpc">
+    <APIProvider apiKey={"AIzaSyCOUU7AeSImVaoarAROKZ4eUQ5Bx4K-Zpc"}>
       <div
         style={{
           height: "500px",

@@ -1,6 +1,6 @@
 import { useRealty } from "@/app/providers/data-provider";
 import Image from "next/image";
-import { Badge } from "./ui/badge";
+import { Badge } from "../src/components/ui/badge";
 
 export default function HeroSectionCentredWithImage() {
   const { propertyData, imageData } = useRealty();

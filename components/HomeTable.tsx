@@ -2,8 +2,10 @@ import { useRealty } from "@/app/providers/data-provider";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 
 export function HouseData() {
-  const { propertyData } = useRealty();
-  console.log(propertyData);
+  const { propertyData, dataNotFoundOnApi } = useRealty();
+  const atGlanceFacts = propertyData?.resoFacts.atAGlanceFacts;
+  const getGarageInfo = atGlanceFacts && atGlanceFacts[4];
+
   return (
     <>
       <Table>
@@ -19,7 +21,10 @@ export function HouseData() {
             </TableCell>
             <TableCell>
               <div className="font-light">Listing Status</div>
-              <div className="font-medium">Listing Status</div>
+              <div className="font-medium">
+                {" "}
+                {dataNotFoundOnApi.general.listingStatus}
+              </div>
             </TableCell>
           </TableRow>
           <TableRow>
@@ -57,7 +62,10 @@ export function HouseData() {
           <TableRow>
             <TableCell>
               <div className="font-light">Legal Description</div>
-              <div className="font-medium">Legal Description</div>
+              <div className="font-medium">
+                {" "}
+                {dataNotFoundOnApi.general.legalDescription}
+              </div>
             </TableCell>
             <TableCell>
               <div className="font-light">Property Type</div>
@@ -82,11 +90,14 @@ export function HouseData() {
             </TableCell>
             <TableCell>
               <div className="font-light">Garage</div>
-              <div className="font-medium">garage</div>
+              <div className="font-medium">{getGarageInfo?.factValue}</div>
             </TableCell>
             <TableCell>
               <div className="font-light">Stories</div>
-              <div className="font-medium">Stories</div>
+              <div className="font-medium">
+                {" "}
+                {dataNotFoundOnApi.general.stories}
+              </div>
             </TableCell>
           </TableRow>
 
@@ -117,11 +128,16 @@ export function HouseData() {
             </TableCell>
             <TableCell>
               <div className="font-light">Key Map</div>
-              <div className="font-medium">573 Q</div>
+              <div className="font-medium">
+                {dataNotFoundOnApi.general.keyMap}
+              </div>
             </TableCell>
             <TableCell>
               <div className="font-light">Market Area</div>
-              <div className="font-medium">Market Area</div>
+              <div className="font-medium">
+                {" "}
+                {dataNotFoundOnApi.general.marketArea}
+              </div>
             </TableCell>
           </TableRow>
         </TableBody>

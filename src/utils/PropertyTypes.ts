@@ -398,3 +398,29 @@ export type TypePropertyDATA = {
   isListedByOwner: null | unknown;
   contingentListingType: null | unknown;
 };
+
+export type TypeNotFound = {
+  general: {
+    listingStatus: string;
+    legalDescription: string;
+    stories: number;
+    keyMap: string;
+    marketArea: string;
+  };
+  rooms: {
+    living: string;
+    bedroom1: string;
+    bedroom2: string;
+    dining: string;
+    primaryBedroom: string;
+  };
+  roomDescription: {
+    roomDescription: string;
+    interior: string;
+  };
+  financial: {
+    otherFees: string;
+    maintenanceFee: string;
+    taxesWoExempt: string;
+  };
+};

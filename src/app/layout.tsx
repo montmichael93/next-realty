@@ -4,8 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/app/providers/theme-provider";
 import { cn } from "@/lib/utils";
 import { RealtyProvider } from "@/app/providers/data-provider";
-import { NavigationMenuHeader } from "@/components/Header";
-import HeroSectionImageWithReviews from "@/components/HeroSection";
+import { NavigationMenuHeader } from "../../components/Header";
 
 console.log(RealtyProvider);
 

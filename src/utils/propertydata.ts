@@ -1,4 +1,4 @@
-import { TypePropertyDATA } from "./types";
+import { TypePropertyDATA } from "./PropertyTypes";
 
 export const propertyDataFromAPI: TypePropertyDATA = {
   listingProvider: null,
@@ -510,7 +510,6 @@ export const propertyDataFromAPI: TypePropertyDATA = {
   state: "TX",
   propertyTypeDimension: "Single Family",
   building: null,
-
   listed_by: {
     agent_reason: 3,
     zpro: false,
@@ -896,5 +895,3 @@ export const propertyDataFromAPI: TypePropertyDATA = {
   isListedByOwner: null,
   contingentListingType: null,
 };
-
-//console.log(propertyDataFromAPI);

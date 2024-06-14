@@ -14,8 +14,7 @@ import { useRealty } from "@/app/providers/data-provider";
 import Image from "next/image";
 
 export function CarouselImages() {
-  const { propertyData, setPropertyData, imageData, setImageData } =
-    useRealty();
+  const { imageData } = useRealty();
 
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -33,7 +32,7 @@ export function CarouselImages() {
 
   return (
     <div>
-      <Carousel setApi={setApi} className="w-full max-w-xl">
+      <Carousel setApi={setApi} className="w-96 max-w-xl">
         <CarouselContent>
           {imageData?.images.map((pic, index) => (
             <CarouselItem key={index}>
@@ -42,9 +41,9 @@ export function CarouselImages() {
                   <Image
                     src={pic}
                     alt="none"
-                    width={500}
-                    height={500}
-                    sizes="500"
+                    width={350}
+                    height={350}
+                    sizes="350"
                     priority={true}
                   />
                 </CardContent>

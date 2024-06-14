@@ -1,4 +1,4 @@
-import { ImageDATA } from "./types";
+import { ImageDATA } from "./PropertyTypes";
 
 export const propertyImageDataFromAPI: ImageDATA = {
   images: [
