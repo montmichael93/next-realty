@@ -1,5 +1,8 @@
 import { SoldTypes } from "./propertiesSoldDataTypes";
 
+import dotenv from "dotenv";
+dotenv.config();
+
 export const soldPropertiesData: SoldTypes = {
   listings: [
     {
@@ -17,12 +20,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaUnitsShort: "sqft",
       livingAreaValue: 1693,
       city: "Houston",
-      medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=12019+Fairpoint+Dr%2C+Houston%2C+TX+77099&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=epHzj9VLv4voOL9vrzCqrf-7YBk=",
+      medium_image_url: `https://maps.googleapis.com/maps/api/streetview?location=12019+Fairpoint+Dr%2C+Houston%2C+TX+77099&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor`,
       home_details_url:
         "/homedetails/12019-Fairpoint-Dr-Houston-TX-77099/28391003_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=12019+Fairpoint+Dr%2C+Houston%2C+TX+77099&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=KHOGCSUUeEwfu_7yKCHZmOvy68w=",
+        "https://maps.googleapis.com/maps/api/streetview?location=12019+Fairpoint+Dr%2C+Houston%2C+TX+77099&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -66,11 +68,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 1608,
       city: "Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=1010+Peach+Spring+Dr%2C+Houston%2C+TX+77088&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=BGmwlFfhCXcb7WgWwHsgYpiH5mg=",
+        "https://maps.googleapis.com/maps/api/streetview?location=1010+Peach+Spring+Dr%2C+Houston%2C+TX+77088&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/1010-Peach-Spring-Dr-Houston-TX-77088/28151548_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=1010+Peach+Spring+Dr%2C+Houston%2C+TX+77088&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=lvfWUwv3fj7xl0dEMioX7i6TP2I=",
+        "https://maps.googleapis.com/maps/api/streetview?location=1010+Peach+Spring+Dr%2C+Houston%2C+TX+77088&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -115,11 +117,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 1996,
       city: "South Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=808+Avenue+N%2C+South+Houston%2C+TX+77587&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=3wn40h3uPkHWA93hyFIZ09sOK7M=",
+        "https://maps.googleapis.com/maps/api/streetview?location=808+Avenue+N%2C+South+Houston%2C+TX+77587&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/808-Avenue-N-South-Houston-TX-77587/27781228_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=808+Avenue+N%2C+South+Houston%2C+TX+77587&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=EqC_0xL8k2zzKU5f11VlqWwo_FI=",
+        "https://maps.googleapis.com/maps/api/streetview?location=808+Avenue+N%2C+South+Houston%2C+TX+77587&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -139,11 +141,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 2468,
       city: "Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=14834+Dorray+Ln%2C+Houston%2C+TX+77082&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=JX1GVOj3hdh7wuwnDxUCWuQk_Gk=",
+        "https://maps.googleapis.com/maps/api/streetview?location=14834+Dorray+Ln%2C+Houston%2C+TX+77082&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/14834-Dorray-Ln-Houston-TX-77082/68421678_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=14834+Dorray+Ln%2C+Houston%2C+TX+77082&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=pDFit21O63OSalPxSZ8m-JP6_BI=",
+        "https://maps.googleapis.com/maps/api/streetview?location=14834+Dorray+Ln%2C+Houston%2C+TX+77082&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -163,11 +165,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 1260,
       city: "Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=659+Fawn+Dr%2C+Houston%2C+TX+77015&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=0nUxK_QVwyxYWn8PrNZrPT8Xfec=",
+        "https://maps.googleapis.com/maps/api/streetview?location=659+Fawn+Dr%2C+Houston%2C+TX+77015&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/659-Fawn-Dr-Houston-TX-77015/28058820_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=659+Fawn+Dr%2C+Houston%2C+TX+77015&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=cIrk9tsRQx7WawTUhdGCsjfI3a8=",
+        "https://maps.googleapis.com/maps/api/streetview?location=659+Fawn+Dr%2C+Houston%2C+TX+77015&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -187,11 +189,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 2487,
       city: "Missouri City",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=4607+Parkview+Ct%2C+Missouri+City%2C+TX+77459&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=5fU20wUz8jafEHx0XskrZHH9jXg=",
+        "https://maps.googleapis.com/maps/api/streetview?location=4607+Parkview+Ct%2C+Missouri+City%2C+TX+77459&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/4607-Parkview-Ct-Missouri-City-TX-77459/27585930_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=4607+Parkview+Ct%2C+Missouri+City%2C+TX+77459&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=wz9rDJ1CFxXHdVMzb4xvNIthjXg=",
+        "https://maps.googleapis.com/maps/api/streetview?location=4607+Parkview+Ct%2C+Missouri+City%2C+TX+77459&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -211,11 +213,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 924,
       city: "Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=661+Bering+Dr%2C+Houston%2C+TX+77057&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=259yFV-xKRbl_It4UqyhVP1ZG5Q=",
+        "https://maps.googleapis.com/maps/api/streetview?location=661+Bering+Dr%2C+Houston%2C+TX+77057&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/661-Bering-Dr-UNIT-406-Houston-TX-77057/28401657_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=661+Bering+Dr%2C+Houston%2C+TX+77057&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=NA8hh4Sq7zn3wknItlLCgV9UCQA=",
+        "https://maps.googleapis.com/maps/api/streetview?location=661+Bering+Dr%2C+Houston%2C+TX+77057&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -259,11 +261,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 1532,
       city: "Katy",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=400x300&zoom=17&center=29.859304428100586,-95.82315826416016&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w&&signature=IjyxrnrRikC7LJsjfb7cGauSTLU=",
+        "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=400x300&zoom=17&center=29.859304428100586,-95.82315826416016&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w",
       home_details_url:
         "/homedetails/5903-Palomaville-Ct-Katy-TX-77493/338052532_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=101x76&zoom=17&center=29.859304428100586,-95.82315826416016&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w&&signature=iMmSpmYaRJYfJCfVdIjl0SNU4Qg=",
+        "https://maps.googleapis.com/maps/api/staticmap?mobile=false&sensor=true&maptype=satellite&size=101x76&zoom=17&center=29.859304428100586,-95.82315826416016&key=AIzaSyBJsNQO5ZeG-XAbqqWLKwG08fWITSxg33w",
       mlsLogoSrc: null,
       price: "--",
     },
@@ -283,11 +285,11 @@ export const soldPropertiesData: SoldTypes = {
       livingAreaValue: 1985,
       city: "Houston",
       medium_image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=9610+S+Petersham+Dr%2C+Houston%2C+TX+77031&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=uejEZgjJMAru9w5-NfC4PpV6aQ4=",
+        "https://maps.googleapis.com/maps/api/streetview?location=9610+S+Petersham+Dr%2C+Houston%2C+TX+77031&size=400x300&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       home_details_url:
         "/homedetails/9610-S-Petersham-Dr-Houston-TX-77031/28157540_zpid/",
       image_url:
-        "https://maps.googleapis.com/maps/api/streetview?location=9610+S+Petersham+Dr%2C+Houston%2C+TX+77031&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor&&signature=dvMybJPnW7XPxtYvl9NJ_n4i30Y=",
+        "https://maps.googleapis.com/maps/api/streetview?location=9610+S+Petersham+Dr%2C+Houston%2C+TX+77031&size=101x76&key=AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ&source=outdoor",
       mlsLogoSrc: null,
       price: "--",
     },

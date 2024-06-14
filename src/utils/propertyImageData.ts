@@ -51,5 +51,3 @@ export const propertyImageDataFromAPI: ImageDATA = {
     "https://photos.zillowstatic.com/fp/581b9373eb3b657a2faeec1a648975e9-cc_ft_1536.jpg",
   ],
 };
-
-//console.log(propertyImageDataFromAPI);

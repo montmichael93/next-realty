@@ -177,5 +177,3 @@ export const agentReviewData: TypesForReviews = {
   ],
   totalCount: 7,
 };
-
-console.log(agentReviewData);

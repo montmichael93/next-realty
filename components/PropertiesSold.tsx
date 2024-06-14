@@ -16,6 +16,9 @@ import Link from "next/link";
 
 type CardProps = React.ComponentProps<typeof Card>;
 
+import dotenv from "dotenv";
+dotenv.config();
+
 export function HomesSoldCard({ className, ...props }: CardProps) {
   const { soldProperties } = useRealty();
   return (
@@ -32,8 +35,13 @@ export function HomesSoldCard({ className, ...props }: CardProps) {
                 <div className=" flex items-center space-x-4 rounded-md border p-4">
                   <div className="flex-1 space-y-1">
                     <Image
-                      src={home.medium_image_url}
-                      alt=""
+                      src={home.medium_image_url
+                        .replace(/&&.*/, "")
+                        .replace(
+                          "AIzaSyARFMLB1na-BBWf7_R3-5YOQQaHqEJf6RQ",
+                          "AIzaSyCOUU7AeSImVaoarAROKZ4eUQ5Bx4K-Zpc"
+                        )}
+                      alt="none"
                       width={"300"}
                       height={"200"}
                       quality={100}
