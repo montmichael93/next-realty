@@ -36,7 +36,6 @@ export function HomesSoldCard({ className, ...props }: CardProps) {
                       alt=""
                       width={"300"}
                       height={"200"}
-                      quality={100}
                       priority={true}
                     />
                   </div>
