@@ -32,10 +32,11 @@ export function HomesSoldCard({ className, ...props }: CardProps) {
                 <div className=" flex items-center space-x-4 rounded-md border p-4">
                   <div className="flex-1 space-y-1">
                     <Image
-                      src={home.image_url}
+                      src={home.medium_image_url}
                       alt=""
                       width={"300"}
                       height={"200"}
+                      quality={100}
                       priority={true}
                     />
                   </div>
