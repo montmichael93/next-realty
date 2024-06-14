@@ -267,5 +267,3 @@ export const agentData: AgentDataTypes = {
     mapCentroid: { longitude: "-95.392486", latitude: "29.806593" },
   },
 };
-
-console.log(agentData);
